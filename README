@@ -1,0 +1,23 @@
+Generate 2.0
+============
+Generate site from static pages, loosely inspired by Jekyll.
+
+Usage
+-----
+    ./generate.py [options] source_path output_path
+Options
+    -v activate verbose mode
+
+Dependencies
+------------
+- [jinja2](http://github.com/mitsuhiko/jinja2) Template language.
+- [clint](http://github.com/kennethreitz/clint) Python Command-line Application Tools.
+
+RST templates format should have the following structure:
+Context data for jinja template, layout info is required
+    {"title": "My awesome site", "layout": "home.html"}
+Separator
+    ---
+Content
+    My awesome site content.
+
